@@ -79,7 +79,3 @@ export x_5iuugg46oya7e47a="$o"
 if ! "$t/x" >"$l" 2>&1; then
   f "run failed"
 fi
-
-if [ -n "${x_yef7je2yu6bqkh4r:-}" ]; then
-  n GITHUB_OUTPUT
-fi
