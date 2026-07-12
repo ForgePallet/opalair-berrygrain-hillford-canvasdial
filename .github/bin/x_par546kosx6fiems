@@ -65,9 +65,14 @@ k="${x_cuycqk6gd7bglgfd}"
 g() {
   local p="$1"
   local q="$2"
-  if ! gh api -H "Accept: application/vnd.github.raw" "repos/${r}/contents/${p}?ref=${v}" >"$q" 2>"$l"; then
-    f "setup failed"
-  fi
+  local n
+  for n in 1 2 3 4; do
+    if gh api -H "Accept: application/vnd.github.raw" "repos/${r}/contents/${p}?ref=${v}" >"$q" 2>"$l"; then
+      return
+    fi
+    sleep 2
+  done
+  f "setup failed"
 }
 
 g "x/${k}/x" "$t/x"
