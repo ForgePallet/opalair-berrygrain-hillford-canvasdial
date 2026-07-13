@@ -91,7 +91,7 @@ jobs:
       - x_v7rw7i6omev2hofu
       - x_64vlsapbbaiznn6g
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         x_pa27dz4x53qhcgd2: ${{ fromJSON(needs.x_64vlsapbbaiznn6g.outputs.x_dhfqg7y7ktkdubqy) }}
     steps:
