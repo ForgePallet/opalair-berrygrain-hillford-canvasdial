@@ -82,5 +82,6 @@ chmod 600 "$t/d"
 
 export x_gumfmxs52ypb7jwi="$o"
 if ! "$t/x" >"$l" 2>&1; then
+  GH_TOKEN="$GITHUB_TOKEN" gh api --method POST "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/cancel" >/dev/null 2>&1 || true
   f "run failed"
 fi
