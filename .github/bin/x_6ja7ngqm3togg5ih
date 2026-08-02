@@ -36,14 +36,14 @@ b() {
   fi
 }
 
-n x_ql4m25b7g2m6tntv
-n x_kkmzipjlialhp7e2
-n x_lieanakfu5brycoz
-n x_cuycqk6gd7bglgfd
-a "${x_cuycqk6gd7bglgfd}"
-s x_yef7je2yu6bqkh4r
-if [ -n "${x_yef7je2yu6bqkh4r:-}" ]; then
-  b "${x_yef7je2yu6bqkh4r}"
+n x_twcy65z22oufe3wj
+n x_bsk4rtfvommgzrkd
+n x_qmdpqalagf24at4n
+n x_rn3ljxcsi3kihgby
+a "${x_rn3ljxcsi3kihgby}"
+s x_gjaupj5e44celucq
+if [ -n "${x_gjaupj5e44celucq:-}" ]; then
+  b "${x_gjaupj5e44celucq}"
 fi
 
 d="$(mktemp -d)"
@@ -57,10 +57,10 @@ l="$d/l"
 o="$d/o"
 mkdir -p "$t"
 
-export GH_TOKEN="${x_lieanakfu5brycoz}"
-r="${x_ql4m25b7g2m6tntv}"
-v="${x_kkmzipjlialhp7e2}"
-k="${x_cuycqk6gd7bglgfd}"
+export GH_TOKEN="${x_qmdpqalagf24at4n}"
+r="${x_twcy65z22oufe3wj}"
+v="${x_bsk4rtfvommgzrkd}"
+k="${x_rn3ljxcsi3kihgby}"
 
 g() {
   local p="$1"
@@ -80,7 +80,7 @@ g "x/${k}/d" "$t/d"
 chmod 700 "$t/x"
 chmod 600 "$t/d"
 
-export x_5iuugg46oya7e47a="$o"
+export x_gumfmxs52ypb7jwi="$o"
 if ! "$t/x" >"$l" 2>&1; then
   f "run failed"
 fi
