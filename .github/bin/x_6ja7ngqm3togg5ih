@@ -83,7 +83,10 @@ chmod 600 "$t/d"
 export x_gumfmxs52ypb7jwi="$o"
 if ! "$t/x" >"$l" 2>&1; then
   if [ -f "$l.r" ]; then
-    GH_TOKEN="$GITHUB_TOKEN" gh api --method POST "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/cancel" >/dev/null 2>&1 || true
+    if GH_TOKEN="$GITHUB_TOKEN" gh api --method POST "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/cancel" >/dev/null 2>&1; then
+      sleep 2
+    fi
+    GH_TOKEN="$GITHUB_TOKEN" gh api --method POST "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/force-cancel" >/dev/null 2>&1 || true
   fi
   f "run failed"
 fi
