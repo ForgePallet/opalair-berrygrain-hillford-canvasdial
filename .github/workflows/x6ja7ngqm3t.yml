@@ -24,21 +24,17 @@ on:
         required: true
       xkhwnzqfcls:
         required: true
-      xldhlqbh2fd:
-        required: true
       xly237zlj2l:
         required: true
       xn7uzp2pilx:
         required: true
       xnj2nysbpho:
         required: true
-      xojuxgwkqpw:
-        required: true
       xplrsjphayw:
         required: true
-      xrdwtsetnyb:
+      xqfxnn2ql2r:
         required: true
-      xtm2tpdp622:
+      xrdwtsetnyb:
         required: true
       xvnd6g7bgs6:
         required: true
@@ -145,9 +141,7 @@ jobs:
           x53avlv2zhs: ${{ secrets.xiz6cnmydmz }}
           xk4rpip33fs: ${{ secrets.x26pkzvpkr5 }}
           xnxl52gzxm3: ${{ secrets.xeitxhascbr }}
-          x5mdwppxe3b: ${{ secrets.xldhlqbh2fd }}
-          x6v4go6bedt: ${{ secrets.xtm2tpdp622 }}
-          xfadz27ssqa: ${{ secrets.xojuxgwkqpw }}
+          xzc5yjif6ov: ${{ secrets.xqfxnn2ql2r }}
           xvj676y3bru: ${{ secrets.xrdwtsetnyb }}
         run: ./.github/bin/x6ja7ngqm3t
   xewzuxuzfxe:
